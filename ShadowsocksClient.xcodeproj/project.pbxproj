@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39207EE32C334300000EB919 /* ShadowsocksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207EE22C334300000EB919 /* ShadowsocksManager.swift */; };
+		39207EFA2C33435F000EB919 /* URLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207EF82C33435F000EB919 /* URLParser.swift */; };
+		39207F042C3343BC000EB919 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207EFE2C3343BC000EB919 /* Config.swift */; };
+		39207F052C3343BC000EB919 /* MessageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207EFF2C3343BC000EB919 /* MessageKey.swift */; };
+		39207F062C3343BC000EB919 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207F002C3343BC000EB919 /* Status.swift */; };
+		39207F072C3343BC000EB919 /* ErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207F012C3343BC000EB919 /* ErrorCode.swift */; };
+		39207F082C3343BC000EB919 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207F022C3343BC000EB919 /* Method.swift */; };
+		39207F092C3343BC000EB919 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207F032C3343BC000EB919 /* Action.swift */; };
+		39207F142C3344D5000EB919 /* Subnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207F102C3343C8000EB919 /* Subnet.swift */; };
+		39207F162C3344D5000EB919 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207F0A2C3343C8000EB919 /* Action.swift */; };
+		39207F172C3344D5000EB919 /* MessageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207F0D2C3343C8000EB919 /* MessageKey.swift */; };
+		39207F1A2C3344D5000EB919 /* Tunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207F112C3343C8000EB919 /* Tunnel.swift */; };
+		39207F1B2C3344D5000EB919 /* ErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207F0C2C3343C8000EB919 /* ErrorCode.swift */; };
+		39207F1C2C3344D5000EB919 /* TunnelStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207F122C3343C8000EB919 /* TunnelStatus.swift */; };
+		39207F1D2C3344DB000EB919 /* TunnelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207EFC2C33436B000EB919 /* TunnelStore.swift */; };
+		39207F1E2C3344DF000EB919 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39207EF62C334346000EB919 /* Functions.swift */; };
+		392E3CA02C2603EA0060CE18 /* InputFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E3C9F2C2603EA0060CE18 /* InputFieldRow.swift */; };
+		392E3CC82C2619370060CE18 /* Tun2socks in Frameworks */ = {isa = PBXBuildFile; productRef = 392E3CC72C2619370060CE18 /* Tun2socks */; };
+		392E3CCD2C26EC8C0060CE18 /* ConnectToDefaultServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E3CCC2C26EC8C0060CE18 /* ConnectToDefaultServer.swift */; };
+		392E3CCF2C26ECB60060CE18 /* DisconnectFromDefaultServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E3CCE2C26ECB60060CE18 /* DisconnectFromDefaultServer.swift */; };
+		392E3CD12C26EE6F0060CE18 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E3CD02C26EE6F0060CE18 /* DataManager.swift */; };
+		392E3CD32C26F1DF0060CE18 /* DependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E3CD22C26F1DF0060CE18 /* DependencyFactory.swift */; };
+		392E3CD72C27953F0060CE18 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 392E3CD62C27953F0060CE18 /* Localizable.xcstrings */; };
+		392E3CD92C28B9EF0060CE18 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 392E3CD82C28B9EB0060CE18 /* PrivacyInfo.xcprivacy */; };
+		392E3CDA2C28BB850060CE18 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 392E3CD82C28B9EB0060CE18 /* PrivacyInfo.xcprivacy */; };
+		392E3CDC2C2B598E0060CE18 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E3CDB2C2B598E0060CE18 /* PacketTunnelProvider.swift */; };
+		3952F2F82C1F4F2B008A611D /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952F2F72C1F4F2B008A611D /* String+.swift */; };
+		3952F2FB2C1F76A8008A611D /* ServerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952F2FA2C1F76A8008A611D /* ServerListView.swift */; };
+		3994DD6E2C30421C00411827 /* ErrorCode+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994DD6D2C30421C00411827 /* ErrorCode+.swift */; };
+		3994DD7F2C31A7D200411827 /* AppPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994DD7E2C31A7D200411827 /* AppPath.swift */; };
+		3994DD832C31A8A000411827 /* ServerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994DD822C31A8A000411827 /* ServerRow.swift */; };
+		39A91D952C1B59E8009B769F /* ShadowsocksClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A91D942C1B59E8009B769F /* ShadowsocksClientApp.swift */; };
+		39A91D972C1B59E8009B769F /* ServerConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A91D962C1B59E8009B769F /* ServerConnectionView.swift */; };
+		39A91D9B2C1B59EB009B769F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39A91D9A2C1B59EB009B769F /* Assets.xcassets */; };
+		39A91DC22C1B5BFA009B769F /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A91DC12C1B5BFA009B769F /* StatusView.swift */; };
+		39A91DC72C1B5D17009B769F /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A91DC62C1B5D17009B769F /* TimerView.swift */; };
+		39A91DC92C1B5DC4009B769F /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A91DC82C1B5DC4009B769F /* ToggleButton.swift */; };
+		39A91DCB2C1B63C8009B769F /* ServerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A91DCA2C1B63C8009B769F /* ServerButton.swift */; };
+		39A91DCD2C1B8687009B769F /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A91DCC2C1B8687009B769F /* Connection.swift */; };
+		39A91DCF2C1B8E09009B769F /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A91DCE2C1B8E09009B769F /* Server.swift */; };
+		39A91DD32C1C6E0B009B769F /* ServerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A91DD22C1C6E0B009B769F /* ServerDetailsView.swift */; };
+		39A91DD92C1C8E3B009B769F /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A91DD82C1C8E3B009B769F /* Country.swift */; };
+		39E20DCB2C31C30E00B7882D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392E3CAC2C2611E60060CE18 /* NetworkExtension.framework */; };
+		39E20DCE2C31CB8A00B7882D /* VPNExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 392E3CAA2C2611E60060CE18 /* VPNExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39E20DCF2C31CB8A00B7882D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A91D892C1B59E8009B769F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 392E3CA92C2611E60060CE18;
+			remoteInfo = VPNExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3994DD5C2C303EF700411827 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3994DD642C303F1800411827 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E20DD12C31CB8A00B7882D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				39E20DCE2C31CB8A00B7882D /* VPNExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		39207EE22C334300000EB919 /* ShadowsocksManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowsocksManager.swift; sourceTree = "<group>"; };
+		39207EF62C334346000EB919 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		39207EF82C33435F000EB919 /* URLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParser.swift; sourceTree = "<group>"; };
+		39207EFC2C33436B000EB919 /* TunnelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelStore.swift; sourceTree = "<group>"; };
+		39207EFE2C3343BC000EB919 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		39207EFF2C3343BC000EB919 /* MessageKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageKey.swift; sourceTree = "<group>"; };
+		39207F002C3343BC000EB919 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		39207F012C3343BC000EB919 /* ErrorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCode.swift; sourceTree = "<group>"; };
+		39207F022C3343BC000EB919 /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		39207F032C3343BC000EB919 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		39207F0A2C3343C8000EB919 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		39207F0C2C3343C8000EB919 /* ErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCode.swift; sourceTree = "<group>"; };
+		39207F0D2C3343C8000EB919 /* MessageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageKey.swift; sourceTree = "<group>"; };
+		39207F102C3343C8000EB919 /* Subnet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subnet.swift; sourceTree = "<group>"; };
+		39207F112C3343C8000EB919 /* Tunnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tunnel.swift; sourceTree = "<group>"; };
+		39207F122C3343C8000EB919 /* TunnelStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelStatus.swift; sourceTree = "<group>"; };
+		392E3C9F2C2603EA0060CE18 /* InputFieldRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldRow.swift; sourceTree = "<group>"; };
+		392E3CAA2C2611E60060CE18 /* VPNExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VPNExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		392E3CAC2C2611E60060CE18 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		392E3CB12C2611E60060CE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		392E3CB22C2611E60060CE18 /* VPNExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VPNExtension.entitlements; sourceTree = "<group>"; };
+		392E3CC92C261F080060CE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		392E3CCA2C261F710060CE18 /* ShadowsocksClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShadowsocksClient.entitlements; sourceTree = "<group>"; };
+		392E3CCC2C26EC8C0060CE18 /* ConnectToDefaultServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectToDefaultServer.swift; sourceTree = "<group>"; };
+		392E3CCE2C26ECB60060CE18 /* DisconnectFromDefaultServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisconnectFromDefaultServer.swift; sourceTree = "<group>"; };
+		392E3CD02C26EE6F0060CE18 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		392E3CD22C26F1DF0060CE18 /* DependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyFactory.swift; sourceTree = "<group>"; };
+		392E3CD62C27953F0060CE18 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		392E3CD82C28B9EB0060CE18 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		392E3CDB2C2B598E0060CE18 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		3952F2F72C1F4F2B008A611D /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		3952F2FA2C1F76A8008A611D /* ServerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListView.swift; sourceTree = "<group>"; };
+		3994DD6D2C30421C00411827 /* ErrorCode+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ErrorCode+.swift"; sourceTree = "<group>"; };
+		3994DD7E2C31A7D200411827 /* AppPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPath.swift; sourceTree = "<group>"; };
+		3994DD822C31A8A000411827 /* ServerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRow.swift; sourceTree = "<group>"; };
+		39A91D912C1B59E8009B769F /* Shadowsocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shadowsocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39A91D942C1B59E8009B769F /* ShadowsocksClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowsocksClientApp.swift; sourceTree = "<group>"; };
+		39A91D962C1B59E8009B769F /* ServerConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConnectionView.swift; sourceTree = "<group>"; };
+		39A91D9A2C1B59EB009B769F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39A91DC12C1B5BFA009B769F /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		39A91DC62C1B5D17009B769F /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		39A91DC82C1B5DC4009B769F /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		39A91DCA2C1B63C8009B769F /* ServerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerButton.swift; sourceTree = "<group>"; };
+		39A91DCC2C1B8687009B769F /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		39A91DCE2C1B8E09009B769F /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		39A91DD22C1C6E0B009B769F /* ServerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDetailsView.swift; sourceTree = "<group>"; };
+		39A91DD82C1C8E3B009B769F /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		392E3CA72C2611E60060CE18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E20DCB2C31C30E00B7882D /* NetworkExtension.framework in Frameworks */,
+				392E3CC82C2619370060CE18 /* Tun2socks in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A91D8E2C1B59E8009B769F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39207EF72C334346000EB919 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				39207EF62C334346000EB919 /* Functions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		39207EF92C33435F000EB919 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				39207EF82C33435F000EB919 /* URLParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		39207EFD2C33436B000EB919 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				39207EFC2C33436B000EB919 /* TunnelStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		39207F132C3343C8000EB919 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39207F0A2C3343C8000EB919 /* Action.swift */,
+				39207F0C2C3343C8000EB919 /* ErrorCode.swift */,
+				39207F0D2C3343C8000EB919 /* MessageKey.swift */,
+				39207F102C3343C8000EB919 /* Subnet.swift */,
+				39207F112C3343C8000EB919 /* Tunnel.swift */,
+				39207F122C3343C8000EB919 /* TunnelStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		392E3CA12C2608500060CE18 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				392E3CD02C26EE6F0060CE18 /* DataManager.swift */,
+				39207EE22C334300000EB919 /* ShadowsocksManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		392E3CA42C260AAD0060CE18 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39A91D962C1B59E8009B769F /* ServerConnectionView.swift */,
+				39A91DD22C1C6E0B009B769F /* ServerDetailsView.swift */,
+				3952F2FA2C1F76A8008A611D /* ServerListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		392E3CAB2C2611E60060CE18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				392E3CAC2C2611E60060CE18 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		392E3CAE2C2611E60060CE18 /* VPNExtension */ = {
+			isa = PBXGroup;
+			children = (
+				39207F132C3343C8000EB919 /* Models */,
+				39207EFD2C33436B000EB919 /* Stores */,
+				39207EF72C334346000EB919 /* Utils */,
+				392E3CDB2C2B598E0060CE18 /* PacketTunnelProvider.swift */,
+				392E3CB22C2611E60060CE18 /* VPNExtension.entitlements */,
+				392E3CB12C2611E60060CE18 /* Info.plist */,
+			);
+			path = VPNExtension;
+			sourceTree = "<group>";
+		};
+		392E3CCB2C26EC1D0060CE18 /* AppIntents */ = {
+			isa = PBXGroup;
+			children = (
+				392E3CCC2C26EC8C0060CE18 /* ConnectToDefaultServer.swift */,
+				392E3CCE2C26ECB60060CE18 /* DisconnectFromDefaultServer.swift */,
+			);
+			path = AppIntents;
+			sourceTree = "<group>";
+		};
+		3952F2F92C1F514B008A611D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3952F2F72C1F4F2B008A611D /* String+.swift */,
+				3994DD6D2C30421C00411827 /* ErrorCode+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		39A91D882C1B59E8009B769F = {
+			isa = PBXGroup;
+			children = (
+				39A91D932C1B59E8009B769F /* ShadowsocksClient */,
+				392E3CAE2C2611E60060CE18 /* VPNExtension */,
+				392E3CAB2C2611E60060CE18 /* Frameworks */,
+				39A91D922C1B59E8009B769F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39A91D922C1B59E8009B769F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39A91D912C1B59E8009B769F /* Shadowsocks.app */,
+				392E3CAA2C2611E60060CE18 /* VPNExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39A91D932C1B59E8009B769F /* ShadowsocksClient */ = {
+			isa = PBXGroup;
+			children = (
+				392E3CCB2C26EC1D0060CE18 /* AppIntents */,
+				392E3CA12C2608500060CE18 /* Managers */,
+				39A91DC52C1B5C66009B769F /* Models */,
+				39207EF92C33435F000EB919 /* Parsers */,
+				3952F2F92C1F514B008A611D /* Extensions */,
+				39A91DC02C1B5BD8009B769F /* Components */,
+				392E3CA42C260AAD0060CE18 /* Views */,
+				39A91D942C1B59E8009B769F /* ShadowsocksClientApp.swift */,
+				392E3CD22C26F1DF0060CE18 /* DependencyFactory.swift */,
+				39A91D9A2C1B59EB009B769F /* Assets.xcassets */,
+				392E3CD62C27953F0060CE18 /* Localizable.xcstrings */,
+				392E3CD82C28B9EB0060CE18 /* PrivacyInfo.xcprivacy */,
+				392E3CCA2C261F710060CE18 /* ShadowsocksClient.entitlements */,
+				392E3CC92C261F080060CE18 /* Info.plist */,
+			);
+			path = ShadowsocksClient;
+			sourceTree = "<group>";
+		};
+		39A91DC02C1B5BD8009B769F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				39A91DC12C1B5BFA009B769F /* StatusView.swift */,
+				39A91DC62C1B5D17009B769F /* TimerView.swift */,
+				39A91DC82C1B5DC4009B769F /* ToggleButton.swift */,
+				39A91DCA2C1B63C8009B769F /* ServerButton.swift */,
+				392E3C9F2C2603EA0060CE18 /* InputFieldRow.swift */,
+				3994DD822C31A8A000411827 /* ServerRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		39A91DC52C1B5C66009B769F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39A91DCC2C1B8687009B769F /* Connection.swift */,
+				39A91DCE2C1B8E09009B769F /* Server.swift */,
+				39A91DD82C1C8E3B009B769F /* Country.swift */,
+				3994DD7E2C31A7D200411827 /* AppPath.swift */,
+				39207F032C3343BC000EB919 /* Action.swift */,
+				39207EFE2C3343BC000EB919 /* Config.swift */,
+				39207F012C3343BC000EB919 /* ErrorCode.swift */,
+				39207EFF2C3343BC000EB919 /* MessageKey.swift */,
+				39207F022C3343BC000EB919 /* Method.swift */,
+				39207F002C3343BC000EB919 /* Status.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		392E3CA92C2611E60060CE18 /* VPNExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 392E3CB62C2611E60060CE18 /* Build configuration list for PBXNativeTarget "VPNExtension" */;
+			buildPhases = (
+				392E3CA62C2611E60060CE18 /* Sources */,
+				392E3CA72C2611E60060CE18 /* Frameworks */,
+				392E3CA82C2611E60060CE18 /* Resources */,
+				3994DD642C303F1800411827 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VPNExtension;
+			packageProductDependencies = (
+				392E3CC72C2619370060CE18 /* Tun2socks */,
+			);
+			productName = VPNExtension;
+			productReference = 392E3CAA2C2611E60060CE18 /* VPNExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		39A91D902C1B59E8009B769F /* ShadowsocksClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39A91DB72C1B59EB009B769F /* Build configuration list for PBXNativeTarget "ShadowsocksClient" */;
+			buildPhases = (
+				39A91D8D2C1B59E8009B769F /* Sources */,
+				39A91D8E2C1B59E8009B769F /* Frameworks */,
+				39A91D8F2C1B59E8009B769F /* Resources */,
+				3994DD5C2C303EF700411827 /* Embed Frameworks */,
+				39E20DD12C31CB8A00B7882D /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39E20DD02C31CB8A00B7882D /* PBXTargetDependency */,
+			);
+			name = ShadowsocksClient;
+			packageProductDependencies = (
+			);
+			productName = ShadowsocksClient;
+			productReference = 39A91D912C1B59E8009B769F /* Shadowsocks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39A91D892C1B59E8009B769F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					392E3CA92C2611E60060CE18 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+					39A91D902C1B59E8009B769F = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 39A91D8C2C1B59E8009B769F /* Build configuration list for PBXProject "ShadowsocksClient" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+				ru,
+			);
+			mainGroup = 39A91D882C1B59E8009B769F;
+			packageReferences = (
+				392E3CA52C2611760060CE18 /* XCLocalSwiftPackageReference "Tun2socks" */,
+			);
+			productRefGroup = 39A91D922C1B59E8009B769F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39A91D902C1B59E8009B769F /* ShadowsocksClient */,
+				392E3CA92C2611E60060CE18 /* VPNExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		392E3CA82C2611E60060CE18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392E3CDA2C28BB850060CE18 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A91D8F2C1B59E8009B769F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A91D9B2C1B59EB009B769F /* Assets.xcassets in Resources */,
+				392E3CD92C28B9EF0060CE18 /* PrivacyInfo.xcprivacy in Resources */,
+				392E3CD72C27953F0060CE18 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		392E3CA62C2611E60060CE18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392E3CDC2C2B598E0060CE18 /* PacketTunnelProvider.swift in Sources */,
+				39207F142C3344D5000EB919 /* Subnet.swift in Sources */,
+				39207F162C3344D5000EB919 /* Action.swift in Sources */,
+				39207F172C3344D5000EB919 /* MessageKey.swift in Sources */,
+				39207F1A2C3344D5000EB919 /* Tunnel.swift in Sources */,
+				39207F1D2C3344DB000EB919 /* TunnelStore.swift in Sources */,
+				39207F1B2C3344D5000EB919 /* ErrorCode.swift in Sources */,
+				39207F1C2C3344D5000EB919 /* TunnelStatus.swift in Sources */,
+				39207F1E2C3344DF000EB919 /* Functions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A91D8D2C1B59E8009B769F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A91DD92C1C8E3B009B769F /* Country.swift in Sources */,
+				39207F062C3343BC000EB919 /* Status.swift in Sources */,
+				39A91DD32C1C6E0B009B769F /* ServerDetailsView.swift in Sources */,
+				3952F2FB2C1F76A8008A611D /* ServerListView.swift in Sources */,
+				3994DD6E2C30421C00411827 /* ErrorCode+.swift in Sources */,
+				3994DD7F2C31A7D200411827 /* AppPath.swift in Sources */,
+				39A91DCF2C1B8E09009B769F /* Server.swift in Sources */,
+				39A91DCB2C1B63C8009B769F /* ServerButton.swift in Sources */,
+				39A91DCD2C1B8687009B769F /* Connection.swift in Sources */,
+				39A91DC92C1B5DC4009B769F /* ToggleButton.swift in Sources */,
+				39207F052C3343BC000EB919 /* MessageKey.swift in Sources */,
+				392E3CD12C26EE6F0060CE18 /* DataManager.swift in Sources */,
+				39207EE32C334300000EB919 /* ShadowsocksManager.swift in Sources */,
+				39207F072C3343BC000EB919 /* ErrorCode.swift in Sources */,
+				392E3CD32C26F1DF0060CE18 /* DependencyFactory.swift in Sources */,
+				39A91DC72C1B5D17009B769F /* TimerView.swift in Sources */,
+				392E3CA02C2603EA0060CE18 /* InputFieldRow.swift in Sources */,
+				39207F082C3343BC000EB919 /* Method.swift in Sources */,
+				3994DD832C31A8A000411827 /* ServerRow.swift in Sources */,
+				392E3CCD2C26EC8C0060CE18 /* ConnectToDefaultServer.swift in Sources */,
+				392E3CCF2C26ECB60060CE18 /* DisconnectFromDefaultServer.swift in Sources */,
+				39A91D972C1B59E8009B769F /* ServerConnectionView.swift in Sources */,
+				39207F042C3343BC000EB919 /* Config.swift in Sources */,
+				39A91DC22C1B5BFA009B769F /* StatusView.swift in Sources */,
+				39A91D952C1B59E8009B769F /* ShadowsocksClientApp.swift in Sources */,
+				39207F092C3343BC000EB919 /* Action.swift in Sources */,
+				39207EFA2C33435F000EB919 /* URLParser.swift in Sources */,
+				3952F2F82C1F4F2B008A611D /* String+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39E20DD02C31CB8A00B7882D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 392E3CA92C2611E60060CE18 /* VPNExtension */;
+			targetProxy = 39E20DCF2C31CB8A00B7882D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		392E3CB72C2611E60060CE18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VPNExtension/VPNExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D58U3756VU;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VPNExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VPNExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.apriakhin.ShadowsocksClient.VPNExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		392E3CB82C2611E60060CE18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VPNExtension/VPNExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D58U3756VU;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VPNExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VPNExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.apriakhin.ShadowsocksClient.VPNExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		39A91DB52C1B59EB009B769F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39A91DB62C1B59EB009B769F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39A91DB82C1B59EB009B769F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ShadowsocksClient/ShadowsocksClient.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = D58U3756VU;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShadowsocksClient/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Shadowsocks;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.apriakhin.ShadowsocksClient;
+				PRODUCT_NAME = Shadowsocks;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39A91DB92C1B59EB009B769F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ShadowsocksClient/ShadowsocksClient.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = D58U3756VU;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShadowsocksClient/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Shadowsocks;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.apriakhin.ShadowsocksClient;
+				PRODUCT_NAME = Shadowsocks;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		392E3CB62C2611E60060CE18 /* Build configuration list for PBXNativeTarget "VPNExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				392E3CB72C2611E60060CE18 /* Debug */,
+				392E3CB82C2611E60060CE18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39A91D8C2C1B59E8009B769F /* Build configuration list for PBXProject "ShadowsocksClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39A91DB52C1B59EB009B769F /* Debug */,
+				39A91DB62C1B59EB009B769F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39A91DB72C1B59EB009B769F /* Build configuration list for PBXNativeTarget "ShadowsocksClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39A91DB82C1B59EB009B769F /* Debug */,
+				39A91DB92C1B59EB009B769F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		392E3CA52C2611760060CE18 /* XCLocalSwiftPackageReference "Tun2socks" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Tun2socks;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		392E3CC72C2619370060CE18 /* Tun2socks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 392E3CA52C2611760060CE18 /* XCLocalSwiftPackageReference "Tun2socks" */;
+			productName = Tun2socks;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 39A91D892C1B59E8009B769F /* Project object */;
+}
