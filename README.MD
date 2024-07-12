@@ -84,28 +84,14 @@
 ## About The Project
 
 <div align="center">
-  <a href="images/macOS-connection-screenshot.png">
-    <img src="images/macOS-connection-screenshot.png" alt="macOS connection screenshot" width="30%">
-  </a>
-  <a href="images/macOS-new-screenshot.png">
-    <img src="images/macOS-new-screenshot.png" alt="macOS new screenshot" width="30%">
-  </a>
-    <a href="images/macOS-servers-screenshot.png">
-    <img src="images/macOS-servers-screenshot.png" alt="macOS servers screenshot" width="30%">
-  </a>
+  <a href="images/macOS-connection-screenshot.png"><img src="images/macOS-connection-screenshot.png" alt="macOS connection screenshot" width="30%"></a><a href="images/macOS-new-screenshot.png"><img src="images/macOS-new-screenshot.png" alt="macOS new screenshot" width="30%"></a><a href="images/macOS-servers-screenshot.png"><img src="images/macOS-servers-screenshot.png" alt="macOS servers screenshot" width="30%"></a>
 </div>
 
 <div align="center">
-  <a href="images/iOS-connection-screenshot.png">
-    <img src="images/iOS-connection-screenshot.png" alt="iOS connection screenshot" width="30%">
-  </a>
-  <a href="images/iOS-new-screenshot.png">
-    <img src="images/iOS-new-screenshot.png" alt="iOS new screenshot" width="30%">
-  </a>
-  <a href="images/iOS-servers-screenshot.png">
-    <img src="images/iOS-servers-screenshot.png" alt="iOS servers screenshot" width="30%">
-  </a>
+  <a href="images/iOS-connection-screenshot.png"><img src="images/iOS-connection-screenshot.png" alt="iOS connection screenshot" width="30%"></a><a href="images/iOS-new-screenshot.png"><img src="images/iOS-new-screenshot.png" alt="iOS new screenshot" width="30%"></a><a href="images/iOS-servers-screenshot.png"><img src="images/iOS-servers-screenshot.png" alt="iOS servers screenshot" width="30%"></a>
 </div>
+
+<br>
 
 Shadowsocks Client is your ideal tool for secure and anonymous web surfing. This lightweight yet powerful application allows you to easily manage your Shadowsocks servers and connections. Enjoy fast and convenient internet access with our key features.
 
@@ -164,7 +150,7 @@ You need your own or a public Shadowsocks server, you can use a access key or co
 - [x] Add basic management of servers
 - [x] Add connecting to the server
 - [x] Add diplink support for QR
-- [x] Add app intetns support
+- [x] Add app intents support
 - [ ] Add menubar for macOS
 - [ ] Add unit tests
 - [ ] Multi-language support
