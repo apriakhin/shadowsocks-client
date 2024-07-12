@@ -149,7 +149,7 @@ You need your own or a public Shadowsocks server, you can use a access key or co
 
 - [x] Add basic management of servers
 - [x] Add connecting to the server
-- [x] Add diplink support for QR
+- [x] Add deeplink support for QR
 - [x] Add app intents support
 - [ ] Add menubar for macOS
 - [ ] Add unit tests
