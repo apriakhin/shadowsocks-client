@@ -42,7 +42,7 @@
     <a href="https://github.com/apriakhin/shadowsocks-client"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/apriakhin/shadowsocks-client">View Demo</a>
+    <a href="https://testflight.apple.com/join/3unbWfmA">TestFlight</a>
     ·
     <a href="https://github.com/apriakhin/shadowsocks-client/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
